@@ -1,28 +1,16 @@
-#include <unistd.h>
-
-/*
-void	ft_ultimate_ft(int *********nbr)
-{
-	int var;
-	char lh;
-	char rh;
-
-	*********nbr = 42;
-	var = *********nbr;
-	lh = var / 10 + '0';
-	rh = var % 10 + '0';
-
-	write(1, &lh, 1);
-	write(1, &rh, 1);
-}
-*/
-
 void	ft_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
 }
 
 /*
+#include <stdio.h>
+void	ft_ultimate_ft(int *********nbr)
+{
+	*********nbr = 42;
+	printf("%d", *********nbr);
+}
+
 int	main(void)
 {
 	int var;
