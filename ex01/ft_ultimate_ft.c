@@ -5,12 +5,6 @@ void	ft_ultimate_ft(int *********nbr)
 
 /*
 #include <stdio.h>
-void	ft_ultimate_ft(int *********nbr)
-{
-	*********nbr = 42;
-	printf("%d", *********nbr);
-}
-
 int	main(void)
 {
 	int var;
@@ -35,7 +29,9 @@ int	main(void)
 	g = &f;
 	h = &g;
 	i = &h;
+	printf("Before: %d\n", var);
 	ft_ultimate_ft(i);
+	printf("After: %d\n", var);
 	return (0);
 }
 */
