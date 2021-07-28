@@ -5,17 +5,13 @@ void	ft_ft(int *nbr)
 
 /*
 #include <stdio.h>
-void	ft_ft(int *nbr)
-{
-	*nbr = 42;
-	printf("%d", *nbr);
-}
-
 int	main(void)
 {
-	int	number;	
+	int	nbr;	
 
-	number = 100;
-	ft_ft(&number);
+	nbr = 100;
+	printf("Before: %d\n", nbr);
+	ft_ft(&nbr);
+	printf("After: %d\n", nbr);
 }
 */
