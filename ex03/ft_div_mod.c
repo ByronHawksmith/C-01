@@ -10,20 +10,18 @@ int	main(void)
 {
 	int a;
 	int b;
-	int temp;
-	int temp2;
+	int div;
+	int mod;
 
-	a = 10;
+	a = 11;
 	b = 5;
-	temp = 0;
-	temp2 = 0;
-	int *div = &temp;
-	int *mod = &temp2;
-	ft_div_mod(a, b, div, mod);
+	div = 0;
+	mod = 0;
+	ft_div_mod(a, b, &div, &mod);
 
 	printf("a: %d\n", a);
 	printf("b: %d\n", b);
-	printf("div: %d\n", *div);
-	printf("mod: %d", *mod);
+	printf("div: %d\n", div);
+	printf("mod: %d", mod);
 }
 */
