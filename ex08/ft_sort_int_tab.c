@@ -1,28 +1,59 @@
+void	ft_swap(int *a, int *b)
+{
+	int	tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+
 void	ft_sort_int_tab(int *tab, int size)
 {
 	int	i;
-	int	tmp;
-	int	middle;
+	int	j;
 
 	i = 0;
-	middle = size / 2;
-	while (i < middle)
+	j = 0;
+	while (i < size - 1)
 	{
-		tmp = tab[i];
-		tab[i] = tab[size - 1 - i];
-		tab[size - 1 - i] = tmp;
+		while (j < size - i - 1)
+		{
+			if (tab[j] > tab[j + 1])
+				ft_swap(&tab[j], &tab[j + 1]);
+			j++;
+		}
 		i++;
 	}
 }
 
 /*
 #include <stdio.h>
+void	print_int_helper(int *arr, int size)
+{
+	int i;
+
+	i = 0;
+	while(i < size)
+	{
+		if (i != 0)
+			printf("%s", ",");
+		printf("%d", arr[i]);
+		i++;
+	}
+}
+
 int	main(void)
 {
-	int arr[5] = {1,2,3,4,5};
+	int arr[5] = {15, 7, 86, 33, 55};
 	
-	printf("%d\n", arr[0]);
-	ft_rev_int_tab(arr, 5);
-	printf("%d", arr[0]);
+	printf("%s", "Before: ");
+	print_int_helper(arr, 5);
+	
+	printf("%s", "\n");
+
+	ft_sort_int_tab(arr, 5);
+
+	printf("%s", "After: ");
+	print_int_helper(arr, 5);
 }
 */
