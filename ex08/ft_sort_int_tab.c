@@ -13,9 +13,9 @@ void	ft_sort_int_tab(int *tab, int size)
 	int	j;
 
 	i = 0;
-	j = 0;
 	while (i < size - 1)
 	{
+		j = 0;
 		while (j < size - i - 1)
 		{
 			if (tab[j] > tab[j + 1])
@@ -42,18 +42,31 @@ void	print_int_helper(int *arr, int size)
 	}
 }
 
+
 int	main(void)
 {
-	int arr[5] = {15, 7, 86, 33, 55};
+	int arr[] = 
+	{
+		-2405,
+		-1886,
+		3161,
+		2884,
+		-3667,
+		-3034,
+		3006,
+		3396,
+		-1455,
+		3846
+	};
 	
 	printf("%s", "Before: ");
-	print_int_helper(arr, 5);
+	print_int_helper(arr, 10);
 	
 	printf("%s", "\n");
 
-	ft_sort_int_tab(arr, 5);
+	ft_sort_int_tab(arr, 10);
 
 	printf("%s", "After: ");
-	print_int_helper(arr, 5);
+	print_int_helper(arr, 10);
 }
 */
