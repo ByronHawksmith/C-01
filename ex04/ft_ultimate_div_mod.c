@@ -1,10 +1,10 @@
 void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int	*tmp;
+	int	tmp;
 
-	*tmp = *a / *b;
+	tmp = *a / *b;
 	*b = *a % *b;
-	*a = *tmp;
+	*a = tmp;
 }
 
 /*
